@@ -55,10 +55,16 @@ img {
   display: flex;
   max-width: 33%;
   padding: 20px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 .photobox {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
 /* ****************** Tablet screen****************** */
@@ -87,6 +93,14 @@ img {
     font-family: "Raleway", sans-serif;
     font-weight: 100;
   }
+
+  img {
+    display: flex;
+    max-width: 50%;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 /* ****************** Mobile screen****************** */
@@ -114,5 +128,12 @@ img {
     font-size: 12px;
     font-family: "Raleway", sans-serif;
     font-weight: 100;
+  }
+
+  img {
+    display: flex;
+    max-width: 100%;
+    padding: 20px;
+    flex-wrap: wrap;
   }
 }
